@@ -55,10 +55,22 @@
     &:focus,
     &.active {
       font-weight: $font-weight-normal;
-      color: $primary-500;
-      border-bottom-color: $primary-500;
+      color: #21472E;
+      border-bottom-color: black;
     }
   }
+}
+
+.pgn__data-table-container {
+  border-radius: 0px !important;
+}
+
+.pgn__data-table-footer {
+  border-radius: 0px !important;
+}
+
+.pgn__data-table > thead th {
+  background-color: #21472E !important;
 }
 
 .pgn__menu-select .pgn__menu-select-popup {

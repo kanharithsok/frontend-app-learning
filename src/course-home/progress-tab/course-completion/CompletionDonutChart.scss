@@ -20,6 +20,7 @@
     size: .5rem;
     weight: $font-weight-bold;
   }
+  color: #21472E;
   line-height: 1rem;
   text-anchor: middle;
   -moz-transform: translateY(-0.6em);
@@ -29,7 +30,7 @@
 }
 
 .donut-chart-text {
-  fill: $primary-500;
+  fill: #21472E;
   -moz-transform: translateY(0.25em);
   -ms-transform: translateY(0.25em);
   -webkit-transform: translateY(0.25em);
@@ -39,6 +40,10 @@
 .donut-ring, .donut-segment {
   stroke-width: 6px;
   fill: transparent;
+}
+
+th span {
+  color: white;
 }
 
 .donut-segment-group {
@@ -56,7 +61,7 @@
 
 .donut-ring, .donut-segment, .donut-hole {
   &.complete-stroke {
-    stroke: $info-500;
+    stroke: #21472E;
   }
 
   &.divider-stroke {
