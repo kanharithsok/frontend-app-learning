@@ -50,6 +50,7 @@ const StartOrResumeCourseCard = ({ intl }) => {
             block
             href={resumeCourseUrl}
             onClick={() => logResumeCourseClick()}
+            style={{ backgroundColor: 'red', borderRadius: '0px', border: '1px solid red' }}
           >
             {hasVisitedCourse ? intl.formatMessage(messages.resume) : intl.formatMessage(messages.start)}
           </Button>
