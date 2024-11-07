@@ -1,11 +1,11 @@
-import React from 'react';
-import { Button, Card } from '@openedx/paragon';
 import { injectIntl, intlShape } from '@edx/frontend-platform/i18n';
+import { Button, Card } from '@openedx/paragon';
+import React from 'react';
 
-import { useSelector } from 'react-redux';
 import { sendTrackingLogEvent } from '@edx/frontend-platform/analytics';
-import messages from '../messages';
+import { useSelector } from 'react-redux';
 import { useModel } from '../../../generic/model-store';
+import messages from '../messages';
 
 const StartOrResumeCourseCard = ({ intl }) => {
   const {
@@ -50,7 +50,7 @@ const StartOrResumeCourseCard = ({ intl }) => {
             block
             href={resumeCourseUrl}
             onClick={() => logResumeCourseClick()}
-            style={{ backgroundColor: 'red', borderRadius: '0px', border: '1px solid red' }}
+            style={{ backgroundColor: '#21472e', borderRadius: '0px', border: '1px solid green' }}
           >
             {hasVisitedCourse ? intl.formatMessage(messages.resume) : intl.formatMessage(messages.start)}
           </Button>

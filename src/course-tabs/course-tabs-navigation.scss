@@ -5,13 +5,14 @@
   .nav a,
   .nav button {
     &:hover {
-      background-color: $light-400;
+     // background-color: green;
+      border: solid 1px green;
     }
   }
 
   .nav a {
     &:not(.active):hover {
-      background-color: $light-400;
+      border: solid 1px green;
       border-bottom: none;
     }
   }
