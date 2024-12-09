@@ -5,7 +5,7 @@
 
 @import "~@edx/frontend-component-footer/dist/footer";
 @import "~@edx/frontend-component-header/dist/index";
-
+@import "fonts";
 
 #root {
   display: flex;
@@ -462,6 +462,36 @@
   .text-gray-700 {
     visibility: hidden !important;
   }
+}
+
+.user-dropdown {
+  .dropdown-toggle {
+    background: #fff !important;
+    border: 1px solid #134223 !important;
+    border-radius: 0 !important;
+    color: #134223 !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    height: 50px !important;
+    line-height: 20px !important;
+    padding: 10px 20px !important;
+  }
+}
+
+body, html {
+  font-family: $font-default;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: $font-title-english;
+}
+
+.khm-title {
+  font-family: $font-title-khmer; 
+}
+
+.khm-text {
+  font-family: $font-general-khmer; 
 }
 
 // Import component-specific sass files
