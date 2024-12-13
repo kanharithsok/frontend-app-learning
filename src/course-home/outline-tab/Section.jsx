@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
 import { injectIntl, intlShape } from '@edx/frontend-platform/i18n';
-import { Collapsible, IconButton, Icon } from '@openedx/paragon';
-import { faCheckCircle as fasCheckCircle, faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
 import { faCheckCircle as farCheckCircle } from '@fortawesome/free-regular-svg-icons';
+import { faMinus, faPlus, faCheckCircle as fasCheckCircle } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Collapsible, Icon, IconButton } from '@openedx/paragon';
+import PropTypes from 'prop-types';
+import React, { useEffect, useState } from 'react';
 
 import { DisabledVisible } from '@openedx/paragon/icons';
-import SequenceLink from './SequenceLink';
 import { useModel } from '../../generic/model-store';
+import SequenceLink from './SequenceLink';
 
 import genericMessages from '../../generic/messages';
 import messages from './messages';
@@ -65,7 +65,7 @@ const Section = ({
         )}
       </div>
       <div className="col-7 ml-3 p-0 font-weight-bold text-dark-500">
-        <span className="align-middle col-6">{title}</span>
+        <span className="align-middle">{title}</span>
         <span className="sr-only">
           , {intl.formatMessage(complete ? messages.completedSection : messages.incompleteSection)}
         </span>
