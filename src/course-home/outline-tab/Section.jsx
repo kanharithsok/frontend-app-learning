@@ -110,7 +110,7 @@ const Section = ({
           />
         )}
       >
-        <ol className="list-unstyled">
+        <ol className="list-unstyled pl-5">
           {sequenceIds.map((sequenceId, index) => (
             <SequenceLink
               key={sequenceId}
