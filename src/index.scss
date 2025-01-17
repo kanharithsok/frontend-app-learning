@@ -478,20 +478,12 @@
   }
 }
 
-body, html {
+.fa {
+  font-family: "FontAwesome" !important;
+}
+
+body, html, h1, h2, h3, h4, h5, h6, p, * {
   font-family: $font-default;
-}
-
-h1, h2, h3, h4, h5, h6, p {
-  font-family: $font-title-english;
-}
-
-.khm-title {
-  font-family: $font-title-khmer; 
-}
-
-.khm-text {
-  font-family: $font-general-khmer; 
 }
 
 // Import component-specific sass files
