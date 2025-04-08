@@ -1,15 +1,15 @@
-import React, { useEffect } from 'react';
 import { LearningHeader as Header } from '@edx/frontend-component-header';
-import { useParams, Navigate } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux';
 import { injectIntl, intlShape } from '@edx/frontend-platform/i18n';
-import FooterSlot from '@openedx/frontend-slot-footer';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { Navigate, useParams } from 'react-router-dom';
 import useActiveEnterpriseAlert from '../alerts/active-enteprise-alert';
-import { AlertList } from './user-messages';
-import { fetchDiscussionTab } from '../course-home/data/thunks';
 import { LOADED, LOADING } from '../course-home/data/slice';
-import PageLoading from './PageLoading';
+import { fetchDiscussionTab } from '../course-home/data/thunks';
+import MyFooter from '../Footer/MyFooter';
 import messages from '../tab-page/messages';
+import PageLoading from './PageLoading';
+import { AlertList } from './user-messages';
 
 const CourseAccessErrorPage = ({ intl }) => {
   const { courseId } = useParams();
@@ -32,7 +32,8 @@ const CourseAccessErrorPage = ({ intl }) => {
         <PageLoading
           srMessage={intl.formatMessage(messages.loading)}
         />
-        <FooterSlot />
+        <MyFooter />
+        {/* <FooterSlot /> */}
       </>
     );
   }
@@ -51,7 +52,8 @@ const CourseAccessErrorPage = ({ intl }) => {
           }}
         />
       </main>
-      <FooterSlot />
+      <MyFooter />
+      {/* <FooterSlot /> */}
     </>
   );
 };

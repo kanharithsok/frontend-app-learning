@@ -1,21 +1,21 @@
-import React from 'react';
-import PropTypes from 'prop-types';
 import { injectIntl, intlShape } from '@edx/frontend-platform/i18n';
+import PropTypes from 'prop-types';
+import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Navigate } from 'react-router-dom';
 
-import { Toast } from '@openedx/paragon';
 import { LearningHeader as Header } from '@edx/frontend-component-header';
-import FooterSlot from '@openedx/frontend-slot-footer';
+import { Toast } from '@openedx/paragon';
+import { useModel } from '../generic/model-store';
 import PageLoading from '../generic/PageLoading';
 import { getAccessDeniedRedirectUrl } from '../shared/access';
-import { useModel } from '../generic/model-store';
 
-import genericMessages from '../generic/messages';
-import messages from './messages';
-import LoadedTabPage from './LoadedTabPage';
 import { setCallToActionToast } from '../course-home/data/slice';
+import MyFooter from '../Footer/MyFooter';
+import genericMessages from '../generic/messages';
 import LaunchCourseHomeTourButton from '../product-tours/newUserCourseHomeTour/LaunchCourseHomeTourButton';
+import LoadedTabPage from './LoadedTabPage';
+import messages from './messages';
 
 const TabPage = ({ intl, ...props }) => {
   const {
@@ -80,7 +80,8 @@ const TabPage = ({ intl, ...props }) => {
           {intl.formatMessage(messages.failure)}
         </p>
       )}
-      <FooterSlot />
+      <MyFooter />
+      {/* <FooterSlot /> */}
     </>
   );
 };
