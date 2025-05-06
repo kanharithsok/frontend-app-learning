@@ -20,7 +20,13 @@ const MyFooter = () => (
 
             {/* Copyright */}
             <Col xs={12} md={12} lg={3} className="mb-4 mb-md-0 d-flex align-items-center justify-content-center">
-              <p className="small m-0">&copy; 2024 Credit Bureau Cambodia. All rights reserved.</p>
+              <p className="small m-0">
+                <FormattedMessage
+                  id="learnerVariantDashboard.allRightsReserved"
+                  defaultMessage="© 2025 Credit Bureau Cambodia. All rights reserved."
+                  description="The text for the copy rights."
+                />
+              </p>
             </Col>
             <Col xs={9} md={9} lg={3} className="pb-4 d-flex justify-content-center">
               {/* <ul className="list-inline m-0">
@@ -61,7 +67,6 @@ const MyFooter = () => (
                 |
                 <li className="list-inline-item mx-2">
                   <a href={`${getConfig().LMS_BASE_URL}/library`} className="text-white small">
-                    Library
                     <FormattedMessage
                       id="learnerVariantDashboard.library"
                       defaultMessage="Library"
@@ -72,7 +77,6 @@ const MyFooter = () => (
                 |
                 <li className="list-inline-item mx-2">
                   <a href={`${getConfig().LMS_BASE_URL}/contact`} className="text-white small">
-                    Contact Us
                     <FormattedMessage
                       id="learnerVariantDashboard.contactUs"
                       defaultMessage="Contact Us"
