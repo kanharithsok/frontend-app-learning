@@ -1,6 +1,6 @@
 import { LearningHeader as Header } from '@edx/frontend-component-header';
 import { injectIntl, intlShape } from '@edx/frontend-platform/i18n';
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Navigate, useParams } from 'react-router-dom';
 import useActiveEnterpriseAlert from '../alerts/active-enteprise-alert';

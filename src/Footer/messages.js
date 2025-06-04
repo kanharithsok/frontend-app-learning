@@ -1,37 +1,31 @@
 import { defineMessages } from '@edx/frontend-platform/i18n';
 
 const messages = defineMessages({
-  home: {
-    id: 'learnerVariantDashboard.home',
-    defaultMessage: 'Home',
-    description: 'The text for the user menu Home navigation link.',
-  },
   myCourse: {
-    id: 'learnerVariantDashboard.myCourse',
+    id: 'myCourse',
+    description: 'My Course link in footer',
     defaultMessage: 'My Course',
-    description: 'The text for the user menu My Course navigation link.',
-  },
-  exploreCourse: {
-    id: 'learnerVariantDashboard.exploreCourse',
-    defaultMessage: 'Explore Course',
-    description: 'The text for the user menu Explore Course navigation link.',
   },
   library: {
     id: 'learnerVariantDashboard.library',
+    description: 'Library link in footer',
     defaultMessage: 'Library',
-    description: 'The text for the user menu Library navigation link.',
   },
   contactUs: {
     id: 'learnerVariantDashboard.contactUs',
+    description: 'Contact Us link in footer',
     defaultMessage: 'Contact Us',
-    description: 'The text for the user menu Contact Us navigation link.',
   },
   account: {
     id: 'learnerVariantDashboard.account',
+    description: 'Account link in footer',
     defaultMessage: 'Account',
-    description: 'The text for the user menu Account navigation link.',
   },
-
+  allRightsReserved: {
+    id: 'learnerVariantDashboard.allRightsReserved',
+    description: 'All rights reserved message in footer',
+    defaultMessage: '© 2025 Credit Bureau Cambodia. All rights reserved.',
+  },
 });
 
 export default messages;
