@@ -35,13 +35,13 @@ const MyFooter = () => {
                   </a>
                 </li>
                 |
-                <li className="list-inline-item mx-2">
+                {/* <li className="list-inline-item mx-2">
                   <a href={`${getConfig().LMS_BASE_URL}/library`} className="text-white small">
 
                     {formatMessage(messages.library)}
                   </a>
                 </li>
-                |
+                | */}
                 <li className="list-inline-item mx-2">
                   <a href={`${getConfig().LMS_BASE_URL}/contact`} className="text-white small">
 
