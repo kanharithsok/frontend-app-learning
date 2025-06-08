@@ -87,3 +87,16 @@ Footer {
   justify-content: center;
   align-items: center;
 }
+
+.my-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+  }
+} 
