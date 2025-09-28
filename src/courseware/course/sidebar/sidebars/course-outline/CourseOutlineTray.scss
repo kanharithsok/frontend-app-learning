@@ -8,7 +8,7 @@
 
 .outline-sidebar {
     @media (min-width: map-get($grid-breakpoints, "xl")) {
-        position: absolute;
+       // position: absolute;
         left: 0;
         top: 0;
     }
